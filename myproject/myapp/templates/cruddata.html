@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>data</h2>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{% form}}
+        {{form.as_p}}
+
+        <!-- <label for="name">NAME :</label>
+        <input type="text" name="NAME"><br><br>
+        <label for="name">last NAME :</label>
+        <input type="text" name="LAST_NAME"><br><br>
+        <label for="name">AGE :</label>
+        <input type="text" name="AGE"><br><br>
+        <label for="name">gmail :</label>
+        <input type="text" name="GMAIL"><br><br> -->
+        <input type="submit">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>edit</h1>
+    <form action="/crdu/{{form.id}}" method="post">
+        {% csrf_token %}
+        <label for="name">NAME :</label>
+        <input type="text" name="NAME" value="{{form.NAME}}"><br><br>
+        <label for="name">last NAME :</label>
+        <input type="text" name="LAST_NAME" value="{{form.NAME}}"><br><br>
+        <label for="name">AGE :</label>
+        <input type="text" name="AGE" value="{{form.AGE}}" ><br><br>
+        <label for="name">gmail :</label>
+        <input type="text" name="GMAIL" value="{{form.GMAIL}}"><br><br>
+
+        <input type="submit" value="update">
+    </form>
+</body>
+</html>

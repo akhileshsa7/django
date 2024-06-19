@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- {% csrf_token %} -->
+    <h1>dta table</h1>
+    <table border="1px" style="width: auto;">
+        <tr>
+            <th>NAME</th>
+            <th>LAST_NAME</th>
+            <th>AGE</th>
+            <th>GMAIL</th>
+            <th>edit/delete</th>
+        </tr>
+        {% for i in data %}
+        <tr>
+            <td>{{i.NAME}}</td>
+            <td>{{i.LAST_NAME}}</td>
+            <td>{{i.AGE}}</td>
+            <td>{{i.GMAIL}}</td>
+            <td><a href="/crde/{{i.id}}">edit</a></td>
+            <td><a href="/crddl/{{i.id}}">detete</a></td>
+
+
+        </tr>
+        {% endfor %}
+    
+    </table>
+    
+</body>
+</html>
